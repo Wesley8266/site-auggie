@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background-image: url('imagem_fundo_geral.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ===== SEÇÕES ===== */
+section {
+    padding: 60px 20px;
+}
+
+.section_footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* ===== INICIO ===== */
+#inicio {
+    min-height: 100vh;
+    position: relative;
+
+    background-image: url('imagem_fundo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio {
+    width: min(650px, 90%);
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background-color: rgba(131, 195, 255, 0.6);
+    border-radius: 20px;
+    text-align: center;
+
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+}
+
+/* ===== NAV ===== */
+.navegacao {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ===== TITULOS ===== */
+.titulo {
+    text-align: center;
+}
+
+/* ===== LIVRO ===== */
+.livro-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.livro-img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.texto_livro {
+    min-width: 300px;
+    max-width: 600px;
+    text-align: justify;
+}
+
+/* ===== ELENCO ===== */
+.elenco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.personagens {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+}
+
+.texto_elenco{
+    margin-top: 25px;
+    white-space: nowrap;
+}
+.personagens img {
+    width: 200px;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+    
+}
+
+/* ===== PRECEITOS ===== */
+.preceitos {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.texto_preceitos {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* ===== FILME ===== */
+.filme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.sobre_filme {
+    max-width: 600px;
+}
+
+.texto_filme {
+    text-align: justify;
+}
+
+
+</style>
+
+<body>
+    <nav class="navbar">
+        <ul class="navegacao">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#livro">LIVRO</a></li>
+            <li><a href="#filme">FILME</a></li>
+            <li><a href="#preceitos">PRECEITOS</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <div class="inicio">
+            <h1>EXTRAORDINÁRIO-A história de Auggie</h1>
+
+            <div class="botoes">
+                <a href="https://ima-rs.com.br/wp-content/uploads/2018/11/8o.-ano-Extraordin%C3%A1rio-R.-J.-Palacio.pdf" target="_blank">
+                    <button class="button">Ler o livro</button>
+                </a>
+
+                <a href="#livro">
+                    <button class="button">Mais informações</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <hr style="height: 10px; background-color: rgb(255, 255, 255); border: 2px rgb(255, 255, 255)">
+    <section id="livro">
+
+        <h1 class="titulo">LIVRO</h1>
+
+        <div class="livro">
+            <img class="livro" style="width: 250px;" src="foto livro.jpg">
+
+            <p class="texto_livro">
+                Extraordinário é um livro escrito por R.J. Palacio que conta a história de August Pullman (Augie), um garoto
+                nascido com uma deformidade facial. Por causa das cirurgias e do bullying que sofreu, ele nunca frequentou
+                uma escola convencional até o quinto ano. Ao iniciar a escola, Augie enfrenta o desafio de se integrar e ser
+                aceito pelos colegas, mostrando coragem e determinação.
+            </p>
+        </div>
+
+        <h1 class="titulo">Livro pelos pontos de vista</h1>
+
+        <h3 class="titulo">
+            O livro Extraordinário é contado por vários personagens, mostrando diferentes perspectivas sobre
+            a vida de Auggie Pullman:
+        </h3>
+
+        <div class="visoes_livro">
+
+            <div class="livro">
+                <p class="texto_livro">
+                    Auggie: Compartilha seus medos e sonhos. Ele enfrenta o desafio de ir à escola pela primeira vez e
+                    aprender a se aceitar apesar de sua aparência.
+                </p>
+            </div>
+
+            <div class="livro">
+                <p class="texto_livro">
+                    Via (irmã de Auggie): Mostra como é crescer com um irmão que exige muita atenção,
+                    revelando sentimentos de amor e também de saudade da própria vida.
+                </p>
+            </div>
+
+            <div class="livro">
+                <p class="texto_livro">
+                    Jack Will: Inicialmente inseguro sobre a amizade com Auggie, ele aprende a
+                    importância da lealdade e da empatia.
+                </p>
+            </div>
+
+            <div class="livro">
+                <p class="texto_livro">
+                    Summer: Sua visão evidencia a bondade e a escolha de ser amiga de alguém diferente
+                    por caráter, não por obrigação.
+                </p>
+            </div>
+
+            <div class="livro">
+                <p class="texto_livro">
+                    Outros personagens: Cada um acrescenta uma visão única sobre aceitação, amizade e família.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- informaçoes do livro -->
+
+        <h1 class="titulo">INFORMAÇÕES DO LIVRO</h1>
+
+        <div class="livro">
+            <ul class="dados_livro">
+                <li>Título: Extraordinário</li>
+                <li>Autor(a): R.J. Palacio</li>
+                <li>Número de páginas: 207 páginas</li>
+                <li>Ano de publicação: 2012</li>
+                <li>Editora (Brasil): Intrínseca</li>
+            </ul>
+        </div>
+
+    </section>
+    <hr style="height: 10px; background-color: rgb(255, 255, 255); border: 2px rgb(255, 255, 255)">
+
+    <section id="filme">
+
+        <h1 class="titulo">FILME</h1>
+
+        <div class="filme">
+
+            <img style="width: 250px;" src="imagem_filme.jpg">
+
+            <div class="sobre_filme">
+                <p class="texto_filme">
+                    A adaptação cinematográfica de Extraordinário se destaca por transformar a história em uma experiência
+                    visual e emocional, utilizando atuações marcantes, trilha sonora sensível e uma direção que aproxima o
+                    público dos personagens e reforça o impacto da narrativa.
+
+                    <a href="https://youtu.be/zkpfKZimpjo" target="_blank">
+                        <button class="button">VER TRAILER</button>
+                    </a>
+                </p>
+
+                <br>
+            </div>
+
+        </div>
+
+        <h1 class="titulo">DADOS DO FILME</h1>
+
+        <div class="filme">
+            <div class="sobre_filme">
+                <ul class="texto_filme">
+                    <li>Título: Extraordinário (Wonder)</li>
+                    <li>Ano de lançamento: 2017</li>
+                    <li>Direção: Stephen Chbosky</li>
+                    <li>Gênero: Drama / Família</li>
+                    <li>Duração: 113 minutos</li>
+                    <li>Classificação indicativa: Livre</li>
+                    <li>País de origem: Estados Unidos</li>
+                    <li>Idioma: Inglês</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h1 class="titulo">ELENCO-FAMILIA PULLMAN</h1>
+
+        <div class="elenco">
+
+            <div class="personagens">
+                <img class="elenco" style="width: 250px;" src="auggie.jpg">
+                <p class="texto_elenco">JACOB TREMBLAY-AUGGIE PULMAN</p>
+            </div>
+
+            <div class="personagens">
+                <img class="elenco" style="width: 250px;" src="mae_auggie.jpg">
+                <p class="texto_elenco">JULIA ROBERTS-ISABEL PULMAN</p>
+            </div>
+
+            <div class="personagens">
+                <img class="elenco" style="width: 250px;" src="pai.jpg">
+                <p class="texto_elenco">OWEN WILSON-NATE PULLMAN</p>
+            </div>
+
+            <div class="personagens">
+                <img class="elenco" style="width: 250px;" src="olivia.jpg">
+                <p class="texto_elenco">IZABELA VIDOVIC-OLIVIA PULMAN</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr style="height: 10px; background-color: rgb(255, 255, 255); border: 2px rgb(255, 255, 255)">
+
+    <section id="preceitos">
+        <h1 class="titulo">PRECEITOS DO FILME</h1>
+    <P class="mensagens">
+        Inspirados no filme Extraordinário, os preceitos apresentados pelo professor Sr. Browne convidam à reflexão
+        sobre empatia, respeito e convivência.
+        Cada frase carrega uma mensagem simples, mas poderosa: a gentileza tem o poder de transformar pessoas e
+        ambientes.
+        Em um mundo onde todos enfrentam desafios invisíveis, escolher ser gentil é uma atitude que faz a diferença
+        todos os dias.
+    </P>
+    <h3 class="titulo">EXEMPLOS DE PRECEITOS:</h3>
+    <div class="preceitos">
+        <p class="texto_preceitos">
+            "Escolha sempre a gentileza."
+        </p>
+        <br>
+        <p class="texto_preceitos">
+           "As palavras podem ferir ou acolher — escolha bem."
+        </p>
+        <br>
+        <p class="texto_preceitos">
+            "Ser diferente é parte de ser humano."
+        </p>
+        <br>
+        <p class="texto_preceitos">
+            "Todos merecem ser tratados com respeito."
+        </p>
+        <br>
+        <p class="texto_preceitos">
+            "Empatia é tentar ver o mundo pelos olhos do outro."
+        </p>
+        <br>
+        <p class="texto_preceitos">
+            "Pequenos gestos podem causar grandes mudanças."
+        </p>
+        <br>
+        <p class="texto_preceitos">
+            "O caráter importa mais do que a aparência."
+        </p>
+        <br>
+        <p class="texto_preceitos">
+            "Faça do bem um hábito diário."
+        </p>
+        <p class="mensagens">
+            Cada pessoa enfrenta batalhas invisíveis. Ser gentil pode mudar o dia de alguém. 
+            Portanto,escolha ser gentil!
+        </p>
+    </div>
+
+
+    </section>
+
+    
+    
+    <footer id="footer">
+
+        <h3 class="titulo" style="color: white;">MEIOS DE CONTATO:</h3>
+
+        <ul class="contatos">
+            <li><a href="#"><i class="ri-github-fill">GIT HUB</i></a></li>
+            <li><a href="#"><i class="ri-mail-fill">EMAIL: wesley.almeida@example.com</i></a></li>
+            <li><a href="#"><i class="ri-phone-fill">TELEFONE: 4002-8922</i></a></li>
+        </ul>
+
+        <p style="color: white;">DESENVOLVIDO POR WESLEY ALMEIDA</p>
+
+        <ul class="navegacao_footer">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#livro">LIVRO</a></li>
+            <li><a href="#filme">FILME</a></li>
+            <li><a href="#preceitos">PRECEITOS</a></li>
+        </ul>
+
+    </footer>
+
+
+</body>
+
+</html>
